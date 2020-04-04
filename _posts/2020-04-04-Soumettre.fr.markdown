@@ -6,9 +6,11 @@ categories: projet
 permalink: /:categories/soumettre-fr.html
 ---
 
-Soumettre.fr est, de loin, le projet dont je suis le plus fier aujourd'hui.
+**Soumettre.fr est, de loin, le projet dont je suis le plus fier aujourd'hui. Il s'agit d'un SaaS destiné aux webmasters et agences qui souhaitent améliorer la visibilité de leur site via le référencement naturel. Aujourd'hui fort d'une équipe de 6 salariés à temps plein, mon associé Rodrigue (directeur commercial) et moi-même (directeur technique) avons réussi notre pari : faire gagner du temps en sourçant des actions de référencement chronophages, comme l'achat de lien et la rédaction de contenus.**
 
-Il s'agit d'un SaaS destiné aux webmasters et agences qui souhaitent améliorer la visibilité de leur site via le référencement naturel. Aujourd'hui fort d'une équipe de 6 salariés à temps plein, mon associé Rodrigue (directeur commercial) et moi-même (directeur technique) avons réussi notre pari : faire gagner du temps en sourçant des actions de référencement chronophages, comme l'achat de lien et la rédaction de contenus.
+<a href="https://soumettre.fr">
+    <img src="/assets/img/soumettre.jpg" alt="Soumettre.fr" />
+</a>
 
 ## Netlinking
 
