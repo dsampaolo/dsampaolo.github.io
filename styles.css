@@ -718,7 +718,19 @@ section {
     gap: var(--spacing-sm);
     flex-wrap: wrap;
     margin-bottom: var(--spacing-md);
+    list-style: none; /* Sécurité */
+    padding: 0;
 }
+
+.social-links li {
+    list-style: none; /* Double sécurité */
+}
+
+/* Couleurs spécifiques réseaux */
+.social-links a[href*="linkedin"] { --btn-hover: #0077b5; }
+.social-links a[href*="github"] { --btn-hover: #333333; }
+.social-links a[href*="twitter"] { --btn-hover: #000000; }
+.social-links a[href*="bsky"] { --btn-hover: #0560ff; }
 
 .social-links a {
     display: inline-block;
@@ -730,12 +742,14 @@ section {
     border-radius: var(--radius-sm);
     transition: var(--transition);
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border: 2px solid transparent; /* Pour éviter le saut au hover */
 }
 
 .social-links a:hover {
-    background: var(--primary-color);
-    transform: translateY(-2px);
-    box-shadow: 0 10px 15px rgba(59, 130, 246, 0.3);
+    background: var(--btn-hover, var(--primary-color));
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px -5px var(--btn-hover, var(--primary-color));
+    border-color: rgba(255,255,255,0.2);
 }
 
 .email a {
