@@ -215,6 +215,85 @@ section {
     color: var(--text-on-light);
 }
 
+.philosophy-section {
+    margin-top: var(--spacing-xl);
+}
+
+.philosophy-intro {
+    max-width: 900px; /* Alignement avec .about article */
+    margin: 0 auto var(--spacing-lg);
+    text-align: left; /* Ferré à gauche pour cohérence */
+    font-size: 1.35rem;
+    color: var(--text-on-light);
+    line-height: 1.6;
+}
+
+.philosophy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
+    margin-bottom: var(--spacing-lg); /* Espace sous la grille */
+}
+
+.philosophy-card {
+    background: var(--bg-dark); /* Fond sombre pour contraste */
+    color: #f1f5f9; /* Texte clair */
+    padding: var(--spacing-md) var(--spacing-md) var(--spacing-lg);
+    border-radius: var(--radius-md);
+    position: relative;
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.philosophy-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
+    box-shadow: var(--shadow-md);
+}
+
+.card-number {
+    font-family: var(--font-heading);
+    font-size: 4rem;
+    font-weight: 900;
+    color: var(--bg-card); /* Couleur subtile en fond */
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    opacity: 0.5;
+    z-index: 0;
+    pointer-events: none;
+    -webkit-text-stroke: 2px var(--border-color);
+}
+
+.philosophy-card:hover .card-number {
+    color: var(--bg-darker);
+    -webkit-text-stroke: 2px var(--primary-color);
+    opacity: 0.2;
+}
+
+.philosophy-card h4 {
+    position: relative;
+    z-index: 1;
+    font-size: 1.4rem;
+    color: var(--accent-color);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.3;
+}
+
+.philosophy-card p {
+    position: relative;
+    z-index: 1;
+    color: #e2e8f0; /* Blanc cassé pour lisibilité optimale */
+    font-size: 1.1rem;
+    margin-bottom: 0;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
 .about h2 {
     color: var(--bg-dark);
     text-align: center;
@@ -234,6 +313,119 @@ section {
 .about article {
     max-width: 900px;
     margin: 0 auto;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: var(--spacing-lg);
+    max-width: var(--max-width);
+    margin: 0 auto var(--spacing-xl);
+    align-items: start;
+}
+
+.about-text .lead {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin-bottom: var(--spacing-md);
+    color: var(--text-on-light);
+}
+
+.approach-box {
+    background: white;
+    padding: var(--spacing-md);
+    border-radius: var(--radius-sm);
+    border-left: 4px solid var(--primary-color);
+    margin: var(--spacing-md) 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.approach-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.approach-box li {
+    margin-bottom: var(--spacing-xs);
+    font-weight: 500;
+}
+
+.profile-card {
+    background: white;
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    box-shadow: 0 10px 30px -5px rgba(0,0,0,0.1);
+    text-align: center;
+    border: 1px solid var(--border-light);
+    position: sticky;
+    top: 100px;
+}
+
+.profile-image-placeholder {
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(135deg, var(--bg-dark) 0%, var(--primary-dark) 100%);
+    border-radius: 50%;
+    margin: 0 auto var(--spacing-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: var(--font-heading);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.profile-stats {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
+    padding-top: var(--spacing-md);
+    border-top: 1px solid var(--border-light);
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    line-height: 1;
+    font-family: var(--font-heading);
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+    font-weight: 600;
+}
+
+.stat-sub {
+    font-size: 0.85rem;
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+.philosophy-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.philosophy-footer {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: var(--text-on-light);
 }
 
 .about p {
